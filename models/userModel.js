@@ -54,7 +54,7 @@ const userSchema = new mongoose.Schema(
         timestamps: true
     });
 
-//fuynctuions
+//functuions
 // hash func
 userSchema.pre("save", async function (next) {
     if (!this.isModified("password")) return next();
